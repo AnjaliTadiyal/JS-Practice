@@ -11,16 +11,16 @@
 
 
 
-
 let num = parseInt(prompt("Enter The Number"));
-let value=[];
+let value = [];
+let result = 0;
+
 for (i = 0; i < num; i++) {
-     value[i] = parseInt(prompt("Enter The" + (i + 1) + "value"));
+    value[i] = parseInt(prompt("Enter The" + (i + 1) + "No"))
 }
+
 
 for (j = 0; j < value.length; j++) {
-document.write(value[j])
+  result+=value[j]
 }
-
-
-
+document.write("The value given by the user"+ value[j]+ "="+result  )
